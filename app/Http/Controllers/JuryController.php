@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class etudiant_controler extends Controller
+class JuryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('Etudiants.liste');
+        return view('jury.liste');
     }
 
     /**
@@ -20,7 +20,7 @@ class etudiant_controler extends Controller
      */
     public function create()
     {
-        return view('Etudiants.ajouter');
+        return view('jury.ajout');
     }
 
     /**

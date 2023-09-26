@@ -2082,12 +2082,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "cead6637226456b35e1175cc53797dd585d85545"
+                "reference": "c67c9f33ab9b3026709c7e606d93f7044678f8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/cead6637226456b35e1175cc53797dd585d85545",
-                "reference": "cead6637226456b35e1175cc53797dd585d85545",
+                "url": "https://api.github.com/repos/nette/utils/zipball/c67c9f33ab9b3026709c7e606d93f7044678f8df",
+                "reference": "c67c9f33ab9b3026709c7e606d93f7044678f8df",
                 "shasum": ""
             },
             "require": {
@@ -2160,7 +2160,7 @@
                 "issues": "https://github.com/nette/utils/issues",
                 "source": "https://github.com/nette/utils/tree/v4.0.2"
             },
-            "time": "2023-09-19T11:58:07+00:00"
+            "time": "2023-09-19T10:10:47+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7758,16 +7758,16 @@
         },
         {
             "name": "spatie/ignition",
-            "version": "1.11.1",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ignition.git",
-                "reference": "3ad2d2c1e3d629bbe713a75f747cbb4d10834299"
+                "reference": "d92b9a081e99261179b63a858c7a4b01541e7dd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/3ad2d2c1e3d629bbe713a75f747cbb4d10834299",
-                "reference": "3ad2d2c1e3d629bbe713a75f747cbb4d10834299",
+                "url": "https://api.github.com/repos/spatie/ignition/zipball/d92b9a081e99261179b63a858c7a4b01541e7dd1",
+                "reference": "d92b9a081e99261179b63a858c7a4b01541e7dd1",
                 "shasum": ""
             },
             "require": {
@@ -7837,7 +7837,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-19T15:21:05+00:00"
+            "time": "2023-08-21T15:06:37+00:00"
         },
         {
             "name": "spatie/laravel-ignition",
@@ -8063,5 +8063,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

@@ -1,7 +1,14 @@
 <?php
 
+use App\Http\Controllers\DirecteurmemoireController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\etudiant_controler;
+use App\Http\Controllers\EtudiantController;
+use App\Http\Controllers\EnseignantController;
+use App\Http\Controllers\JuryController;
+use App\Http\Controllers\MaitrestageController;
+use App\Http\Controllers\SallesController;
+use App\Http\Controllers\SoutenanceController;
+use Symfony\Component\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +25,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::resource('etudiants', etudiant_controler::class);
+Route::resource('etudiants', EtudiantController::class);
+
+Route::resource('enseignants', EnseignantController::class);
+
+Route::resource('soutenances', SoutenanceController::class);
+
+Route::resource('jury', JuryController::class);
+
+Route::resource('salle', SallesController::class);
+
+Route::resource('dm', DirecteurmemoireController::class);
+
+Route::resource('ms', MaitrestageController::class);

@@ -1,6 +1,6 @@
-@extends('layouts.mainlayouts')
+@extends('layouts.mainlayout')
+@section('content')
 
-@section('contenu')
 <div class="pagetitle">
     <h1>Tableau Bord</h1>
     <nav>
@@ -25,20 +25,25 @@
               <div class="card-body">
                 <h5 class="card-title">Inscription d'un étudiant </h5>
 
-              <form method="POST" action="{{route('etudiants.store')}}" class="row g-3">
-              <div class="col-md-12">
-                <label for="inputName5" class="form-label">Nom et Prénom</label>
-                <input type="text" class="form-control" name="nom_prenom">
+              <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName5" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="nom">
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputName5" class="form-label">Prénom</label>
+                <input type="text" class="form-control" name="prenom">
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputDatenaissance" class="form-label">Date de naissance</label>
+                <input type="date" class="form-control" name="date_naiss">
               </div>
 
               <div class="col-md-6">
                 <label for="inputEmail5" class="form-label">E-mail</label>
                 <input type="email" class="form-control" name="email">
-              </div>
-
-              <div class="col-md-6">
-                <label for="inputPassword5" class="form-label">Date de naissance</label>
-                <input type="date" class="form-control" name="date_naissance">
               </div>
 
               <div class="col-6">
@@ -51,15 +56,10 @@
               </div>
 
               <div class="col-6">
-                <label for="inputAddress5" class="form-label">Téléphone étudiant</label>
-                <input type="number" class="form-control" name="phone_etudiant">
+                <label for="inputAddress5" class="form-label">Téléphone</label>
+                <input type="number" class="form-control" name="telephone">
               </div>
 
-
-              <div class="col-md-4">
-                <label for="inputCity" class="form-label">Téléphone parents</label>
-                <input type="number" class="form-control" name="phone_parents">
-              </div>
 
               <div class="col-md-4">
                 <label for="inputState" class="form-label">Filière étudiant</label>
@@ -81,8 +81,6 @@
                       <option>3eme année</option>
                       <option>4eme année</option>
                       <option>5eme année</option>
-                      <option>6eme année</option>
-                      <option>7eme année</option>
                   </select>
               </div>
 

@@ -42,7 +42,7 @@
 
   <main>
     <div class="container">
-<form>
+<form method="POST" action="{{ route('login') }}">
     @csrf
       <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
         <div class="container">
